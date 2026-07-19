@@ -1,0 +1,285 @@
+[
+  {
+    "id": "cache-yarn",
+    "name": "Yarn 全局缓存",
+    "path": "%LOCALAPPDATA%\\Yarn\\Cache",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "包管理器下载缓存，删除后按需重新下载"
+  },
+  {
+    "id": "cache-npm",
+    "name": "npm 缓存",
+    "path": "%APPDATA%\\npm-cache",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "npm 下载缓存，可用 npm cache verify 验证"
+  },
+  {
+    "id": "cache-pnpm",
+    "name": "pnpm 缓存",
+    "path": "%LOCALAPPDATA%\\pnpm-cache",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "pnpm 元数据缓存"
+  },
+  {
+    "id": "cache-uv",
+    "name": "uv 缓存",
+    "path": "%LOCALAPPDATA%\\uv\\cache",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "Python uv 包缓存，删除后按需重新下载"
+  },
+  {
+    "id": "cache-go-build",
+    "name": "Go 构建缓存",
+    "path": "%LOCALAPPDATA%\\go-build",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "等同 go clean -cache"
+  },
+  {
+    "id": "cache-electron",
+    "name": "Electron 二进制缓存",
+    "path": "%LOCALAPPDATA%\\electron",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "Electron 下载缓存，重新安装依赖时会再下载"
+  },
+  {
+    "id": "cache-playwright",
+    "name": "Playwright 浏览器",
+    "path": "%LOCALAPPDATA%\\ms-playwright*",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "自动化测试浏览器，可用 npx playwright install 重装"
+  },
+  {
+    "id": "cache-cargo-xwin",
+    "name": "cargo-xwin 缓存",
+    "path": "%LOCALAPPDATA%\\cargo-xwin",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "Rust 交叉编译缓存，也可整体迁移到其他盘"
+  },
+  {
+    "id": "cache-codex-runtimes",
+    "name": "Codex 运行时缓存",
+    "path": "%USERPROFILE%\\.cache\\codex-runtimes",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "AI 工具运行时缓存，会自动重建"
+  },
+  {
+    "id": "cache-wps-addons",
+    "name": "WPS 插件缓存",
+    "path": "%APPDATA%\\kingsoft\\wps\\addons",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "WPS 加载项缓存，删除后按需重新下载"
+  },
+  {
+    "id": "cache-wps-oldver",
+    "name": "WPS Office 旧版本",
+    "path": "%LOCALAPPDATA%\\Kingsoft\\WPS Office\\*",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "保留最新版，仅清理历史版本目录",
+    "keepLatestSubdir": true
+  },
+  {
+    "id": "cache-squirrel",
+    "name": "Squirrel 更新包",
+    "path": "%LOCALAPPDATA%\\*-updater\\packages",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "Squirrel 系应用的历史更新包，保留 Update.exe",
+    "keepFiles": ["Update.exe"]
+  },
+  {
+    "id": "cache-baidunetdisk",
+    "name": "百度网盘缓存",
+    "path": "%APPDATA%\\baidunetdisk",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "客户端缓存与日志，不含网盘文件本体"
+  },
+  {
+    "id": "cache-electron-roaming",
+    "name": "Electron 应用缓存",
+    "path": "%APPDATA%\\Electron",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "Roaming 下的 Electron 缓存"
+  },
+  {
+    "id": "cache-qqlive",
+    "name": "腾讯视频缓存",
+    "path": "%APPDATA%\\Tencent\\QQLive*",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "在线视频播放缓存"
+  },
+  {
+    "id": "cache-iqiyi",
+    "name": "爱奇艺缓存",
+    "path": "%APPDATA%\\IQIYI*",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "在线视频播放缓存"
+  },
+  {
+    "id": "cache-bilibili",
+    "name": "B站客户端缓存",
+    "path": "%APPDATA%\\bilibili*",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "客户端缓存，不影响账号数据"
+  },
+  {
+    "id": "cache-temp",
+    "name": "临时文件（仅 2 天前）",
+    "path": "%LOCALAPPDATA%\\Temp",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "仅清理 2 天前的临时文件，避免影响运行中的程序",
+    "maxAgeDays": 2
+  },
+  {
+    "id": "cache-crashdumps",
+    "name": "崩溃转储文件",
+    "path": "%LOCALAPPDATA%\\CrashDumps",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "应用崩溃 dump，调试价值随时间递减"
+  },
+  {
+    "id": "cache-app-shell",
+    "name": "应用外壳缓存",
+    "path": "%LOCALAPPDATA%\\app_shell_cache_*",
+    "category": "safeCache",
+    "action": "delete",
+    "note": "桌面应用外壳缓存，会自动重建"
+  },
+  {
+    "id": "caution-edge",
+    "name": "Edge 用户数据",
+    "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data",
+    "category": "caution",
+    "action": "reportOnly",
+    "note": "含收藏/密码/扩展，仅报告大小；要清请在浏览器内清缓存"
+  },
+  {
+    "id": "caution-wpsdrive",
+    "name": "WPS 云文档本地目录",
+    "path": "%USERPROFILE%\\WPSDrive",
+    "category": "caution",
+    "action": "reportOnly",
+    "note": "可能含未同步文档，清理前先确认云端已同步"
+  },
+  {
+    "id": "caution-xwechat",
+    "name": "微信数据 (xwechat)",
+    "path": "%APPDATA%\\Tencent\\xwechat",
+    "category": "caution",
+    "action": "reportOnly",
+    "note": "聊天记录/文件，建议用微信自带存储管理清理"
+  },
+  {
+    "id": "caution-lark",
+    "name": "飞书 LarkShell 数据",
+    "path": "%APPDATA%\\LarkShell",
+    "category": "caution",
+    "action": "reportOnly",
+    "note": "含聊天文件缓存，建议在飞书内清理"
+  },
+  {
+    "id": "caution-local-programs",
+    "name": "用户态安装的程序",
+    "path": "%LOCALAPPDATA%\\Programs",
+    "category": "caution",
+    "action": "reportOnly",
+    "note": "已安装应用本体，卸载请走系统设置"
+  },
+  {
+    "id": "caution-codex-sessions",
+    "name": "Codex 会话记录",
+    "path": "%USERPROFILE%\\.codex\\sessions",
+    "category": "caution",
+    "action": "reportOnly",
+    "note": "如需清理仅删 7 天前的会话"
+  },
+  {
+    "id": "sys-winsxs",
+    "name": "WinSxS 组件存储",
+    "path": "%WINDIR%\\WinSxS",
+    "category": "system",
+    "action": "reportOnly",
+    "note": "勿手动删，用磁盘清理 / DISM（Dism.exe /Online /Cleanup-Image /StartComponentCleanup）"
+  },
+  {
+    "id": "sys-installer",
+    "name": "Windows Installer 缓存",
+    "path": "%WINDIR%\\Installer",
+    "category": "system",
+    "action": "reportOnly",
+    "note": "勿手动删，卸载/修补依赖此目录"
+  },
+  {
+    "id": "sys-winreagent",
+    "name": "$WinREAgent 更新残留",
+    "path": "%SYSTEMDRIVE%\\$WinREAgent",
+    "category": "system",
+    "action": "reportOnly",
+    "note": "勿手动删，用磁盘清理"
+  },
+  {
+    "id": "sys-panther",
+    "name": "Panther 安装日志",
+    "path": "%WINDIR%\\Panther",
+    "category": "system",
+    "action": "reportOnly",
+    "note": "勿手动删，用磁盘清理 / DISM"
+  },
+  {
+    "id": "migrate-cargo-xwin",
+    "name": "cargo-xwin 缓存（迁移）",
+    "path": "%LOCALAPPDATA%\\cargo-xwin",
+    "category": "migrate",
+    "action": "reportOnly",
+    "note": "建议迁 D 盘并设环境变量，也可直接删除（见缓存规则）"
+  },
+  {
+    "id": "migrate-cargo",
+    "name": "Rust cargo 目录",
+    "path": "%USERPROFILE%\\.cargo",
+    "category": "migrate",
+    "action": "reportOnly",
+    "note": "建议迁 D 盘并改 CARGO_HOME"
+  },
+  {
+    "id": "migrate-rustup",
+    "name": "Rust rustup 目录",
+    "path": "%USERPROFILE%\\.rustup",
+    "category": "migrate",
+    "action": "reportOnly",
+    "note": "建议迁 D 盘并改 RUSTUP_HOME"
+  },
+  {
+    "id": "migrate-go",
+    "name": "Go 工作目录",
+    "path": "%USERPROFILE%\\go",
+    "category": "migrate",
+    "action": "reportOnly",
+    "note": "建议迁 D 盘并改 GOPATH"
+  },
+  {
+    "id": "migrate-wpsdrive",
+    "name": "WPS 云文档目录（迁移）",
+    "path": "%USERPROFILE%\\WPSDrive",
+    "category": "migrate",
+    "action": "reportOnly",
+    "note": "建议在 WPS 设置中把本地同步目录改到 D 盘"
+  }
+]
